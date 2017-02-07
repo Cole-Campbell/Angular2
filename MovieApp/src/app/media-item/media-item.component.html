@@ -1,0 +1,17 @@
+<div class="item">
+  <h2>{{ mediaItem.name }}</h2>
+  <!-- This is the same as *ngIf. Template never makes it to the DOM. -->
+  <template [ngIf]="mediaItem.watchedOn">
+    <div>Watched On {{ mediaItem.watchedOn }}</div>
+  </template>
+  <div>{{ mediaItem.category }}</div>
+    <div>{{ mediaItem.year }}</div>
+    <div class="tools">
+      <a class="delete" (click)="onDelete">
+        Delete
+      </a>
+      <a class="details" (click)="onDetails">
+        Details
+      </a>
+    </div>
+</div>

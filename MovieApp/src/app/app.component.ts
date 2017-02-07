@@ -7,7 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My App!';
+  onMediaItemDelete(mediaItem){
+
+  }
+
+  //Object Literal
+  firstMediaItem = {
+    id: 1,
+    name: "Firebug",
+    medium: "Series",
+    category: "Science Fiction",
+    year: 2010,
+    watchedOn: null,
+    isFavourite: false
+  };
+  title = 'Movie Watch List';
 }
 
 //Selectors should use - between words
