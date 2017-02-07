@@ -5,12 +5,16 @@
     <div>Watched On {{ mediaItem.watchedOn }}</div>
   </template>
   <div>{{ mediaItem.category }}</div>
+  <div>{{ mediaItem.medium }}</div>
     <div>{{ mediaItem.year }}</div>
     <div class="tools">
-      <a class="delete" (click)="onDelete">
+      <i
+        [mwFavourite]="mediaItem.isFavourite"
+        class="fa fa-heart"></i>
+      <a class="delete btn" (click)="onDelete">
         Delete
       </a>
-      <a class="details" (click)="onDetails">
+      <a class="details btn" (click)="onDetails">
         Details
       </a>
     </div>

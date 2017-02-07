@@ -3,3 +3,42 @@
   float: left;
   padding: 10px;
 }
+
+:host.medium-movies h2{
+  color: red;
+}
+
+:host.medium-series h2{
+  color: green;
+}
+
+.btn{
+  border:1px solid #f8f8f8;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+}
+
+.delete{
+  background-color: darkred;
+  color: white;
+}
+
+.details{
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.tools{
+  margin-top: 20px;
+}
+
+
+.is-favourite{
+  color: #cc504a;
+}
+
+.is-favourite-hovering{
+  color: #cc504a;
+}

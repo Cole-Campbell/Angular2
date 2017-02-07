@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item/media-item.component';
 import { MediaItemListComponent } from './media-item-list/media-item-list.component';
+import { FavouriteDirective } from './favourite.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MediaItemComponent,
-    MediaItemListComponent
+    MediaItemListComponent,
+    FavouriteDirective
   ],
   imports: [
     BrowserModule,

@@ -13,11 +13,11 @@ export class MediaItemListComponent {
     {
       id: 1,
       name: "Baby Jane",
-      medium: "Film",
+      medium: "Movie",
       category: "Thriller",
       year: 1960,
       watchedOn: null,
-      isFavourite: false
+      isFavourite: true
     },
     {
       id: 1,
