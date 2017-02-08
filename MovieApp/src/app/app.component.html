@@ -3,6 +3,11 @@
     <h1>{{title}}</h1>
   </header>
   <p>Keeping tracking of the movies I want to watch.</p>
+  <nav>
+    <a routerLink="/">All</a>
+    <a routerLink="/Movies">Movies</a>
+    <a routerLink="/Series">Series</a>
+  </nav>
   <!--<mw-media-item-list [mediaItem]="firstMediaItem" (delete)="onMediaItemDelete($event)"></mw-media-item-list>-->
   <router-outlet></router-outlet>
 </section>
