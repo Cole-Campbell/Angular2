@@ -1,5 +1,9 @@
 <header>
-  <div> {{ mediaItems | categoryList }}</div>
+  <nav>
+    <a (click)="getMediaItems('')">All</a>
+    <a (click)="getMediaItems('Movies')">Movies</a>
+    <a (click)="getMediaItems('Series')">Series</a>
+  </nav>
 </header>
 <section>
   <mw-media-item

@@ -6,6 +6,14 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 
 export class MediaItemComponent {
+  isHidden: false;
+
+  hide(){
+    if(this.isHidden) {
+      return ""
+    }
+  }
+
   //Supports Property bindings with Input where item is equal to mediaItem
 
   //Find the first, and give it the alias of second one. Try not to use Alias

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, XHRBackend } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MediaItemComponent } from './media-item/media-item.component';
@@ -10,10 +10,8 @@ import { FavouriteDirective } from './favourite.directive';
 import { CategoryListPipe } from './category-list.pipe';
 import { MediaItemFormComponent } from './media-item-form/media-item-form.component';
 import { MediaItemService } from './media-item.service';
-
-const lookupLists = {
-  mediums: ['Movies', 'Series']
-};
+import { lookupListToken, lookupLists } from './providers';
+import { MockXHRBackend} from './mock-xhr-backend'
 
 @NgModule({
   declarations: [
@@ -31,7 +29,8 @@ const lookupLists = {
   ],
   providers: [
     MediaItemService,
-    { provide: 'lookupListToken', useValue: lookupLists }
+    { provide: lookupListToken, useValue: lookupLists },
+    { provide: XHRBackend, useClass: MockXHRBackend }
   ],
   bootstrap: [AppComponent]
 })

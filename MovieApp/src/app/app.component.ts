@@ -11,7 +11,7 @@ export class AppComponent {
 
   }
 
-  //Object Literal
+  /*Object Literal
   firstMediaItem = {
     id: 1,
     name: "Firebug",
@@ -20,7 +20,7 @@ export class AppComponent {
     year: 2010,
     watchedOn: null,
     isFavourite: false
-  };
+  };*/
   title = 'Movie Watch List';
 }
 

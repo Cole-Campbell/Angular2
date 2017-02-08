@@ -42,3 +42,7 @@
 .is-favourite-hovering{
   color: #cc504a;
 }
+
+.isHidden{
+  display:none;
+}
